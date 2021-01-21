@@ -30,8 +30,8 @@ def get_neighbours(city):
     return tuple_list
 
 def bfs (start, stop):
+    #Breadth-first search
 
-    #"breadth-first search"
     already_visited_dict = {}
     already_visited_dict[start] = 1
     current = start
@@ -54,6 +54,7 @@ def bfs (start, stop):
     print(f"BFS: {path} number of iterations {iters}")
 
 def dfs(start, stop):
+    #Depth-first search
 
     already_visited_dict = {}
     already_visited_dict[start] = 1
@@ -80,9 +81,8 @@ def dfs(start, stop):
 
 
 def mcs(start, stop):
+    #Minimum-cost search
 
-    "minimum-cost search"
-    
     already_visited_dict = {}
     already_visited_dict[start] = 1
     current = start
@@ -109,5 +109,5 @@ def mcs(start, stop):
     print(f"MCS: {path}, number of iterations: {iters}")
 
 bfs('Oradea', 'Craiova')
-dfs('Oradea', 'Craiova')
+dfs('Oradea', 'Fagaras')
 mcs('Oradea', 'Craiova')
