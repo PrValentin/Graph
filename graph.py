@@ -111,3 +111,6 @@ def mcs(start, stop):
 bfs('Oradea', 'Craiova')
 dfs('Oradea', 'Fagaras')
 mcs('Oradea', 'Craiova')
+bfs('Oradea', 'Craiova')
+dfs('Oradea', 'Fagaras')
+mcs('Oradea', 'Craiova')
